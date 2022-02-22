@@ -1,0 +1,181 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale-1, shrink-to-fit-no"/>
+        <title>@ViewData["Title"] - PI_II</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <title>CONTROLE DE LOTEAMENTOS</title>
+  </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url("Loteamento.jpeg");
+  /*opacity: 0.3;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  background-image: url("Nossa_Empresa1.jpg");
+  height: 25%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-12">
+          <div class="header">
+            <h1 style="color:white;text-align:center;">LOTEAMENTOS SANTA TERESA</h1>
+            <p style="color:white;text-align:center;">Escolha o melhor local para construir sua casa.</p>
+          </div>
+
+          <div class="topnav">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="Institucional">Institucional</a>
+            <a asp-controller="Home" asp-action="Servicos">Servicos</a>
+            <a href="#">Portfólio</a>
+            <a href="#">Galeria de Fotos</a>
+            <a href="#" style="float:right">Login</a>
+          </div>
+        </div>
+      </div> 
+    </div>  
+  </div>   
+
+<div class="row">
+  <div class="col-6"></div> 
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Nossa História</h2>
+        <h5>Nossa sede, 25 de Outubro de 2021</h5>
+        <div class="fakeimg" style="height:600px;">Imagem</div>
+        <p>Desde 2018 nossa empresa atua no mercado de loteamento visando proporcionar aos nossos clientes a concretização de um sonho de ter um cantinho para chamar de seu.</p>
+        <p>Nossa equipe está focada em dar o melhor atendimento aos nossos clientes .</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6"></div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Loteamentos</h2>
+      <!--  <div class="fakeimg" style="height:100px;">Image</div> -->
+        <p>Loteamento Canaã</p>
+        <p>Loteamento Doura</p>
+        <p>Loteamento Miguel Ernesto</p>
+        <p>Loteamento Pilar</p>
+        <p>Loteamento Soledade</p>
+      </div>
+      <div class="card">
+        <h3>Contato</h3>
+        <p>Nosso Telefone é:</p>
+        <p>+55 86 3232-5888</p>
+      </div>
+      <div class="card">
+        <h3>Siga-nos</h3>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <i class="fas fa-cloud" style="font-size:30px;color:lightblue;"></i>
+        <i class="far fa-clock" style="font-size:30px;color:#2196F3"></i>
+        <span class="fa-stack fa-lg" style="font-size:30px;color:#2196F3;">
+        <i class="far fa-circle fa-stack-2x" ></i>
+        <i class="fab fa-twitter fa-stack-1x"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

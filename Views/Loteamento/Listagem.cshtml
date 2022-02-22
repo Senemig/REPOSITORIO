@@ -1,0 +1,73 @@
+@model List<Loteamento>;
+
+@{
+    ViewData["Title"] = "Listagem de Loteamentos";
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<table class = "table">
+    <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome Loteamento</th>
+                        <th>Nome Cliente</th>
+                        <th>CPF</th>
+                        <th>Valor Lote</th>
+                        <th>Entrada R$</th>
+                        <th>Qtd Prestações</th>
+                        <th>Valor Prestação</th>
+                        <th>Data Contrato</th>
+                        <th>Operações</th>
+
+                    </tr>
+
+                    @foreach (Loteamento l in Model)
+                    {
+                        <tr>
+                            <td>@l.Id</td>
+                            <td>@l.Nome_Lote</td>
+                            <td>@l.Nome_Cliente</td>
+                            <td>@l.CPF</td>
+                            <td>@l.Valor_Lote</td>
+                            <td>@l.Entrada</td>
+                            <td>@l.Qtd_Parcelas</td>
+                            <td>@l.Valor_Parcela</td>
+                            <td>@l.Data_Contrato.ToShortDateString()</td>
+
+                            <td>
+                                <a href="/Loteamento/Editar?Id=@l.Id">Alterar</a>|
+                                <a href="/Loteamento/Excluir?Id=@l.Id"
+                                onclick="return confirm('Desesaja remover esse item?');">Remover</a>
+                            </td>
+
+                        </tr>
+
+                    }
+                </table>
+
+</body>
+</html>

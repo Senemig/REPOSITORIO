@@ -1,0 +1,153 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  background-image: url("Loteamento.jpeg");
+  /*opacity: 0.3;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column 
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}*/
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  background-image: url("Nossa_Empresa1.jpg");
+ /* height: 25%;
+  margin: 0 auto;
+  position: relative;*/
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:white;text-align:center;">LOTEAMENTOS SANTA TERESA</h1>
+  <p style="color:white;text-align:center;">Escolha o melhor local para construir sua casa.</p>
+</div>
+
+<div class="topnav">
+  <a asp-controller="Home" asp-action="Index">Home</a>
+  <a asp-controller="Home" asp-action="Institucional">Institucional</a>
+  <a asp-controller="Home" asp-action="Servicos">Servicos</a>
+<!--  <a href="#">Portfólio</a>
+    <a href="#">Galeria de Fotos</a>
+  <a href="#" style="float:right">Login</a> -->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Política de Qualidade</h2>
+      <h5>Missão</h5>
+      <p>Prover nossos clientes com soluções que busquem agilidade, segurança, qualidade, ética, organização e inovação tecnológica</p>
+    </div>
+    <div class="card">
+      <h2>Política de Qualidade</h2>
+      <h5>Visão</h5>
+      <p>Sermos uma empresa auto gerenciável até 2023.</p>
+     
+    </div>
+    <div class="card">
+      <h2>Política de Qualidade</h2>
+      <h5>Valores</h5>
+      <p> Foco no resultado: Precisa ter meta;<br>
+          Qualidade: Sempre entregar ao cliente um produto com excelente acabamento;<br>
+          Segurança: Segurança sempre em 1º. lugar;<br>
+          Organização: Primar pela organização e limpeza do nosso ambiente de trabalho;<br>
+          Ética: Inegociável;<br>
+          Inovação: Procurar soluções inovadoras visando: agilidade; qualidade e redução de custos;<br>
+          Padronização: Caminho para disseminação das melhores práticas e redução de custos;</p>
+   
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

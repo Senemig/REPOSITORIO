@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale-1, shrink-to-fit-no"/>
+        <title>@ViewData["Title"] - PI_II</title>
+        <link rel="stylesheet" href="~/lib/bootstrap-4/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <title>Loteamentos</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class= "header">
+                      <h1 style="color:white;text-align:center;">LOTEAMENTOS SANTA TERESA</h1>
+                      <p style="color:white;text-align:center;">Escolha o melhor local para construir sua casa.</p>
+                    </div>  
+                    <div class="topnav">
+                      <a asp-controller="Home" asp-action="Index">Home</a>
+                      <a asp-controller="Home" asp-action="Institucional">Institucional</a>
+                      <a asp-controller="Home" asp-action="Servicos">Servicos</a>
+                      <a href="#">Portfólio</a>
+                      <a href="#">Galeria de Fotos</a>
+                      <a href="#" style="float:right">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row primeira container-fluid">
+                <div class="col-sm-12 col-md-6 col-xl-6" id="maior">
+                    <img src="res/img/people.jpg" alt="Pessoas protestando" title="Protesto" class="img-fluid" style="width: 100%; height:450px; object-fit: cover;"/>  
+                      
+                    <h2>Manchete Principal</h2>
+                    <span class="detalhe">Detalhes desta manchete principal</span>    
+                </div>
+                <div class="col-sm-12 col-md-3 col-xl-3" id="menor1">
+                    <img src="res/img/pedestrians2.png" alt="Pedestres atravessando a rua" title="Pedestres" class="img-fluid" style="width: 100%; height:450px; object-fit: cover;"/>
+                    <h3>Manchete 2</h3>
+                    <span class="detalhe">Detalhes desta manchete</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-xl-3" id="menor2"> 
+                    <img src="res/img/dna2.png" alt="DNA em tons de azul" title="Saúde" class="img-fluid" style="width: 100%; height:450px; object-fit: cover;"/>
+                    <h3>Manchete 3</h3>
+                    <span class="detalhe">Detalhes desta manchete</span>
+                </div>
+            </div>    
+            </div>
+            <div class="row container-fluid">
+                <div class="col-sm-12 col-md-3 col-xl-3 outra-noticia" id="outra-noticia1">
+                   <img src="res/img/industry1.png" alt="Pessoas protestando" title="Protesto"  class="img-fluid" style= "width: 100%; object-fit: cover;" />
+                   <h3>Manchete Secundária 1</h3>
+                </div>
+                <div class="col-sm-12 col-md-9 col-xl-9 borda">
+                    <section id="esporte" class="secao-extra">
+                        <h2 >Esporte</h2>
+                        <div class="w-100"></div>
+                        <div class="row noticia-secao" id="esporte1">  
+                            
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <img src="res/img/football.png" alt="Jogadores disputando bola" title="Futebol" class="img-fluid" style= "object-fit: cover;"/>
+                                <br>
+                                <span>Manchete esporte 1</span>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <img src="res/img/ferrari.png" alt="Carro de formula 1 da ferrari" title="Formula 1" class="img-fluid" style= "object-fit: cover;"/>
+                                <br>
+                                <span>Manchete esporte 2</span>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <h4>Campeonato BR</h4> 
+                                <img src="res/img/time1.png" alt="Logo time 1" title="Time 1" class="time img-fluid" style= "object-fit: cover;"/>
+                                <span class="resultado">1 x 0</span>
+                                <img src="res/img/time2.png" alt="Logo time 2" title="Time 2" class="time img-fluid" style= "object-fit: cover;" />
+                                <div class="w-100"></div>
+                                <img src="res/img/time3.png" alt="Logo time 3" title="Time 3" class="time img-fluid" style= "object-fit: cover;"/>
+                                <span class="resultado">1 x 0</span>
+                                <img src="res/img/time4.png" alt="Logo time 4" title="Time 4" class="time img-fluid" style= "object-fit: cover;"/>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row primeira">
+               
+            </div>
+            <div class="row container-fluid">
+                <div class="col-sm-12 col-md-3 col-xl-3 outra-noticia" id="outra-noticia2">
+                    <img src="res/img/taxi.png" alt="Pessoas protestando" title="Protesto"  class="img-fluid" style="width: 100%; object-fit: cover;"/>
+                    <h3>Manchete Secundária 2</h3>    
+                </div>
+                <div class="col-sm-12 col-md-9 col-xl-9 borda">
+                    <section id="entretenimento" class="secao-extra">
+                        <h2>Entretenimento</h2>
+                        <div class="w-100"></div>
+                        <div class="row noticia-secao" id="entret1">
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <img src="res/img/show.png" alt="Cantor no palco rodeado de pessoas" title="Show" class="img-fluid" style= "object-fit: cover;"/>
+                                <br>
+                                <span>Manchete entretenimento 1</span>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <img src="res/img/tv.png" alt="Homem assistindo TV" title="TV" class="img-fluid" style="object-fit: cover;"/>
+                                <br>
+                                <span>Manchete entretenimento 2</span>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-xl-4">
+                                <img src="res/img/celebrity.png"  alt="Rosto da atriz Kajal Aggarwal" title="Celebridade" class="img-fluid" style="object-fit: cover;"/>
+                                <br>
+                               <span>Manchete entretenimento 3</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>    
+
+    </body>
+</html>

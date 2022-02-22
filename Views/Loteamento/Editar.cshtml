@@ -1,0 +1,83 @@
+@model Loteamento;
+
+@{
+    ViewData["Title"] = "Editar Loteamento";
+
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <meta charset="UTF-8">
+  <style type="text/css" media="all">
+    body{color:#000}
+    .label_normal{width:150px}
+   
+  </style>
+
+</head>
+<body>
+    <header>
+        <h6>Alteração de Lotes</h6>
+       
+        <p></p>
+
+<form method="POST" asp-action="Editar">
+
+    <input type="hidden" asp-for="Id">
+  
+   
+  <p>
+        <label asp-for="Nome_Lote" class="label_normal">Nome Lote:</label>
+        <input asp-for="Nome_Lote" size="24">
+    </p>
+    <p>
+        <label asp-for="Nome_Cliente" class="label_normal">Nome Cliente:</label>
+        <input asp-for="Nome_Cliente" size="24">
+    </p>
+    <p>
+        <label asp-for="CPF" class="label_normal">CPF:</label>
+        <input asp-for="CPF" size="24">
+    </p>
+
+    <p>
+        <label asp-for="Valor_Lote" class="label_normal">Valor Lote:</label>
+        <input asp-for="Valor_Lote" size="24">
+    </p>
+    <p>
+        <label asp-for="Entrada" class="label_normal">Entrada:</label>
+        <input asp-for="Entrada" size="24">
+    </p>
+
+    <p>
+        <label asp-for="Qtd_Parcelas" class="label_normal">Qtd Parcelas:</label>
+        <input asp-for="Qtd_Parcelas" size="24">
+    </p>
+
+    <p>
+        <label asp-for="Valor_Parcela" class="label_normal">Valor Parcela:</label>
+        <input asp-for="Valor_Parcela" size="24">
+    </p>
+
+    <p>
+        <label asp-for="Data_Contrato" class="label_normal">Data do Contrato:</label>
+        <input asp-for="Data_Contrato" size="24">
+    </p>
+   
+    <p>
+        <input type="Submit" value="Editar">
+    </p>
+
+</form>
+
+ </header>
+    <main>
+     
+    </main>
+    <footer>
+
+    </footer>
+</body>    
+
+</html> 

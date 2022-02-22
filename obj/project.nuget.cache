@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m3YCLhPN4bs31GYLBgFmq4sPR68NJROLKEPCr3wGdjftEzsO6KK82U5QqD9f13riGp403I9qrfb58yH5CKEMoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ozima\\Dropbox\\Ozimar\\Sesc\\Tecnico\\Estudos\\Modulo_B\\UC08\\Projeto Integrador\\Etapa No. 2\\Etapa No. 2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ozima\\.nuget\\packages\\mysqlconnector\\1.3.14\\mysqlconnector.1.3.14.nupkg.sha512"
+  ],
+  "logs": []
+}
